@@ -22,9 +22,21 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.flo
 
 # TARGET_RECOVERY_UI_LIB := librecovery_ui_flo
 
+# Define kernel config for inline building
+TARGET_KERNEL_CONFIG := flo_defconfig
+TARGET_KERNEL_SOURCE := kernel/asus/flo
+
+# Define kernel config for inline building
+TARGET_KERNEL_CONFIG := flo_defconfig
+TARGET_KERNEL_SOURCE := kernel/asus/flo
+
 TARGET_RELEASETOOLS_EXTENSIONS := device/asus/flo
 
 TARGET_RECOVERY_FSTAB = device/asus/flo/recovery.fstab
 
 -include vendor/asus/flo/BoardConfigVendor.mk
 include device/asus/flo/BoardConfigCommon.mk
+
+# Toolchain Definitions
+TARGET_GCC_VERSION_AND := 4.7
+TARGET_GCC_VERSION_ARM := 4.7
