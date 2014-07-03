@@ -53,6 +53,9 @@ on fs
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
+    
+    # run sysinit
+    start sysinit
 
 on boot
     #Create QMUX deamon socket area
@@ -501,3 +504,7 @@ on property:init.svc.surfaceflinger=running
 
 on property:init.svc.surfaceflinger=stopped
     stop ppd
+
+# sysinit (system/etc/init.d)
+service sysinit /system/bin/sysinit
+    oneshot
