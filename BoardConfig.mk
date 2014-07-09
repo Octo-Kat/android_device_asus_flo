@@ -33,6 +33,7 @@ TARGET_RECOVERY_FSTAB = device/asus/flo/recovery.fstab
 -include vendor/asus/flo/BoardConfigVendor.mk
 include device/asus/flo/BoardConfigCommon.mk
 
-# Toolchain Definitions
+# Toolchain
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-linux-androideabi-4.7
+TARGET_KERNEL_CUSTOM_TOOLCHAIN_PREFIX := arm-linux-androideabi-
 TARGET_GCC_VERSION_AND := 4.7
-TARGET_GCC_VERSION_ARM := 4.7
