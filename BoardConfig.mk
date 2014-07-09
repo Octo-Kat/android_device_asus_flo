@@ -26,10 +26,6 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.flo
 TARGET_KERNEL_CONFIG := flo_defconfig
 TARGET_KERNEL_SOURCE := kernel/asus/flo
 
-# Define kernel config for inline building
-TARGET_KERNEL_CONFIG := flo_defconfig
-TARGET_KERNEL_SOURCE := kernel/asus/flo
-
 TARGET_RELEASETOOLS_EXTENSIONS := device/asus/flo
 
 TARGET_RECOVERY_FSTAB = device/asus/flo/recovery.fstab
