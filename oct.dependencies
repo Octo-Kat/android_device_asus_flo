@@ -3,7 +3,7 @@
    "remote": "cr",
    "repository": "android_kernel_google_msm",
    "target_path": "kernel/asus/flo",
-   "revision": "WIP"
+   "revision": "kk"
  },
  {
    "remote": "tm",
